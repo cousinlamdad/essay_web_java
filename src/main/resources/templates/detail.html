@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" th:lang="${#locale.language}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title th:text="#{app.title}">Essay Web</title>
+    <link rel="icon" type="image/svg+xml" th:href="@{/favicon.svg}">
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+<div class="page">
+    <header th:replace="~{fragments :: header}"></header>
+    <main>
+        <article class="essay-detail">
+            <h2 th:text="${essay.title}">Title</h2>
+            <p class="meta">
+                <span th:text="#{detail.created}">Created</span>:
+                <time th:text="${#temporals.format(essay.createdAt, 'yyyy-MM-dd HH:mm')}">date</time>
+            </p>
+            <pre th:text="${essay.content}"></pre>
+            <a th:href="@{/essays}">
+                <button type="button" th:text="#{list.back}">Back to list</button>
+            </a>
+        </article>
+    </main>
+</div>
+</body>
+</html>

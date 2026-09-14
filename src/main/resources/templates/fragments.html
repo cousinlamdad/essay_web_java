@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+<header class="app-header" th:fragment="header">
+    <h1 th:text="#{app.title}">Essay Web</h1>
+    <nav>
+        <a th:href="@{/essays}" th:text="#{nav.list}">List</a>
+        <a th:href="@{/}" th:text="#{nav.input}">Upload</a>
+        <a th:href="@{${currentUri}(lang=${#locale.language == 'zh' ? 'en' : 'zh'})}"
+           th:text="${#locale.language == 'zh' ? 'EN' : '中文'}">中文</a>
+    </nav>
+</header>
+</body>
+</html>
