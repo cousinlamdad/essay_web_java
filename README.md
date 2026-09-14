@@ -103,7 +103,7 @@ mvnw.cmd spring-boot:run
 ./mvnw spring-boot:run
 ```
 
-Then open: http://localhost:3001
+Then open: http://localhost:3034
 
 The same port serves the web pages, static assets, and the JSON API.
 
