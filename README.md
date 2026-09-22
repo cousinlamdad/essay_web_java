@@ -150,7 +150,8 @@ To add another language, create `messages_<lang>.properties` and visit any page 
 ## Check Maven version
 ```bash
 .\mvnw -v
-
+```
+```bash
 Apache Maven 3.9.9 (8e8579a9e76f7d015ee5ec7bfcdc97d260186937)
 Maven home: C:\Users\takming.lam\.m2\wrapper\dists\apache-maven-3.9.9\8e74001100ff70d6af083c5511fcc5ec49282d7017cde82c3698eee8fdf86698
 Java version: 23.0.2, vendor: Oracle Corporation, runtime: C:\Users\takming.lam\.jdks\openjdk-23.0.2
